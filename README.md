@@ -1,5 +1,5 @@
 
-
+```flowchart
 flowchart TD
     C["Client"] --> G["API Gateway"]
     G --> A["Auth Service"]
@@ -10,7 +10,7 @@ flowchart TD
     R -.-> U
     R -.-> N["Notification Service"]
 
-
+```
 ### Registration
 ```
 POST /api/auth/register
