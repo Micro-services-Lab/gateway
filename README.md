@@ -1,5 +1,8 @@
+## Project Architecture
 
-```flowchart
+The following diagram shows the high-level architecture of the system.
+
+```mermaid
 flowchart TD
     C["Client"] --> G["API Gateway"]
     G --> A["Auth Service"]
@@ -9,8 +12,9 @@ flowchart TD
     A -. "UserCreated event later" .-> R["RabbitMQ"]
     R -.-> U
     R -.-> N["Notification Service"]
-
 ```
+
+
 ### Registration
 ```
 POST /api/auth/register
