@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-# Gateway
-
-Django microservice containing the `gateway` application.
-
-## Run locally
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python src/manage.py migrate
-python src/manage.py runserver
-```
-
-## Run with Docker
-
-```bash
-docker compose up --build
-```
-=======
 ## Microservices Authentication System
 
 A learning project built with **Django 5.2.7** using a microservices architecture. The project demonstrates how to build independent services with separate databases, an API Gateway, JWT authentication, and eventually asynchronous communication using RabbitMQ.
@@ -394,4 +373,3 @@ API Gateway
 ```
 
 Once the synchronous version works correctly in Docker Compose, RabbitMQ will be introduced to replace direct service-to-service communication and move toward an event-driven architecture.
->>>>>>> f5e329fbe07ee09da642dd88ce7d3cec6a862ef3
